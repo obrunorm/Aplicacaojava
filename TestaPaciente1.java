@@ -3,6 +3,8 @@ package br.com.generation.projetojava;
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class TestaPaciente1  {
 		
 		 public static void main(String [] args) {
@@ -25,17 +27,23 @@ public class TestaPaciente1  {
 			 int zonaSul = 3;
 			 int zonaOeste = 4;
 			 
+			 
+			 System.out.println("=======================================================================");
+			 System.out.println("=                        BEM VINDO AO JAVACINA                        =");
+			 System.out.println("=  Entre com seus dados e verifique a melhor localidade de vacinação  =");
+			 System.out.println("=======================================================================");
+			 
 			 //Entrada de dados
-			 System.out.println("Digite Nome: ");
+			 System.out.println("Digite seu nome, por favor: ");
 			 nome = leia.next();
 			
 			 System.out.println("\nOlá, " + nome + "!!! ");
-			 System.out.println("\n========================================================");
+			 System.out.println("\n=======================================================================");
 			 
 			 System.out.println("\nDigite Idade, por favor: ");
 			 idade = leia.nextInt();
 			 
-			 System.out.println("\n========================================================");
+			 System.out.println("\n=======================================================================");
 			 
 			 while(idade < 0 || idade >= 120){
 				 System.out.println("Idade inválida, digite novamente:");
@@ -46,13 +54,15 @@ public class TestaPaciente1  {
 				 System.out.println("\nVocê faz parte de algum grupo especial ou com comorbidade?: (1- sim | 2- não) ");
 				 comorbidade = leia.nextInt();
 				 leia.nextLine();
+				 System.out.println("\n=======================================================================");
 				 
 			if (comorbidade == 1) {
 				
-					System.out.println("Você está dentro do grupo de pessoas que podem tomar a vacina!!");
+					System.out.println("\nVocê está dentro do grupo de pessoas que podem tomar a vacina!!");
 					System.out.println("Siga com o cadastro, por gentileza\n");
 				//	pc1 = leia.nextInt();
 					cadastrarUsuario(leia);
+					System.out.println("\n=======================================================================");
 				}
 			
 			else if (comorbidade == 2){
@@ -157,7 +167,7 @@ public class TestaPaciente1  {
 			 System.out.println("Digite Email: ");
 			 email = leia.next();
 			 
-			 System.out.println("\nCadastro feito com sucesso\n");
+			 System.out.println("\nCadastro feito com sucesso!!!\n");
 
 			 do {
 				 System.out.println("Por favor, escolha uma região\n");
@@ -218,6 +228,6 @@ public class TestaPaciente1  {
 	}
 	
 
-
 	
+
 
